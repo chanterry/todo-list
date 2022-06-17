@@ -36,6 +36,7 @@ const CreateTask = ({modal, toggle, save}) => {
                         value={taskName} 
                         onChange={handleChange} 
                         name="taskName"
+                        placeholder="Task"
                     />
                 </div>
                 <div className = "form-group">
@@ -44,7 +45,8 @@ const CreateTask = ({modal, toggle, save}) => {
                         className="form-control" 
                         value={description} 
                         onChange={handleChange} 
-                        name="description">
+                        name="description"
+                        placeholder="Description">
                     </textarea>
                 </div>
             </ModalBody>

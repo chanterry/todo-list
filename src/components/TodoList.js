@@ -48,8 +48,8 @@ const TodoList = () => {
     return (
         <>
             <div className="header text-center">
-                <h3>Todo List</h3>
-                <button className="btn btn-primary mt-2" onClick = {() => setModal(true)}>Create Task</button>
+                <h3>Todo List App</h3>
+                <button className="btn btn-dark mt-2" onClick = {() => setModal(true)}>+</button>
             </div>
             <div className="task-container">
                 {taskList && taskList.map((obj , index) => 

@@ -51,7 +51,7 @@ const CreateTask = ({modal, toggle, save}) => {
                 </div>
             </ModalBody>
             <ModalFooter>
-            <Button color="primary" onClick={handleSave}>Create</Button>{' '}
+            <Button color="primary" onClick={handleSave}>Create</Button>
             <Button color="secondary" onClick={toggle}>Cancel</Button>
             </ModalFooter>
       </Modal>

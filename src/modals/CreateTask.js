@@ -10,19 +10,19 @@ const CreateTask = ({modal, toggle, save}) => {
         
         const {name, value} = e.target
 
-        if(name === "taskName"){
-            setTaskName(value)
-        }else{
+        if(name === "taskName"){ //if name equals taskName
+            setTaskName(value) //set task name so what is the value in input it is stored here
+        }else{ //we update the description state so we can write set description and this will be value
             setDescription(value)
         }
     }
 
-    const handleSave = (e) => {
+    const handleSave = (e) => { //we make one object and assign the value from the state
         e.preventDefault()
         let taskObj = {}
         taskObj["Name"] = taskName
         taskObj["Description"] = description
-        save(taskObj)
+        save(taskObj) //we call the save function (we create in TodoList component) that will pass the task object in the array taskList
     }
 
     return (

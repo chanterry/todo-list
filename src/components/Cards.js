@@ -29,7 +29,7 @@ const Card = ({taskObj, index, deleteTask, updateListArray}) => {
     }
 
     const updateTask = (obj) => {
-        updateListArray(obj, index)
+        updateListArray(obj, index) //update the index of the array with the obj
     }
 
     const handleDelete = () => {

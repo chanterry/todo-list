@@ -9,14 +9,14 @@ const EditTask = ({modal, toggle, updateTask, taskObj}) => {
         
         const {name, value} = e.target
 
-        if(name === "taskName"){
-            setTaskName(value)
-        }else{
+        if(name === "taskName"){ //if name equals taskName
+            setTaskName(value) //set task name so what is the value in input it is stored here
+        }else{ //we update the description state so we can write set description and this will be value
             setDescription(value)
         }
     }
 
-    useEffect(() => {
+    useEffect(() => { //update the state 
         setTaskName(taskObj.Name)
         setDescription(taskObj.Description)
     },[])
